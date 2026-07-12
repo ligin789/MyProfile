@@ -48,7 +48,7 @@ export default function ProjectCard({ project, index, onOpen }) {
         {/* Compact framed screenshot, top-right */}
         <BrowserFrame
           url={project.liveUrl}
-          className="absolute right-5 top-5 h-[54%] w-[64%] transition-transform duration-[800ms] ease-out-expo group-hover:-translate-y-2 group-hover:scale-[1.02]"
+          className="absolute right-5 top-5 h-[40%] w-[48%] transition-transform duration-[800ms] ease-out-expo group-hover:-translate-y-2 group-hover:scale-[1.02]"
         >
           <img
             src={project.thumbnail}
