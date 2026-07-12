@@ -70,7 +70,7 @@ export default function Contact() {
       <div className="container-x">
         <p className="eyebrow mb-8">
           <span className="inline-block h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
-          05 — Contact
+          06 — Contact
         </p>
 
         <h2
