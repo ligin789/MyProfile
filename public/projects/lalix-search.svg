@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="780" viewBox="0 0 360 780" font-family="'Barlow',Arial,sans-serif">
+  <defs>
+    <linearGradient id="lx-pink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></linearGradient>
+    <linearGradient id="lx-purple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+    <linearGradient id="lx-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10B981"/><stop offset="1" stop-color="#047857"/></linearGradient>
+    <linearGradient id="lx-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient>
+    <linearGradient id="lx-lpurple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B794F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <linearGradient id="lx-olive" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A3C644"/><stop offset="1" stop-color="#65A30D"/></linearGradient>
+  </defs>
+
+  <rect width="360" height="780" fill="#000000"/>
+  <text x="24" y="40" font-size="15" font-weight="600" fill="#e5e5ea">9:22</text>
+
+  <!-- header -->
+  <circle cx="44" cy="120" r="20" fill="#7C3AED"/>
+  <text x="44" y="126" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">L</text>
+  <text x="82" y="130" font-size="26" font-weight="700" fill="#ffffff">Search</text>
+  <circle cx="330" cy="120" r="4" fill="#cfcfd6"/><rect x="327" y="112" width="6" height="12" rx="3" fill="#cfcfd6"/>
+
+  <!-- search bar -->
+  <rect x="24" y="176" width="312" height="52" rx="12" fill="#ffffff"/>
+  <circle cx="52" cy="202" r="8" fill="none" stroke="#555" stroke-width="2.5"/><line x1="58" y1="208" x2="63" y2="213" stroke="#555" stroke-width="2.5"/>
+  <text x="76" y="207" font-size="15" fill="#6b6b73">What do you want to listen to?</text>
+
+  <!-- recent -->
+  <text x="24" y="285" font-size="19" font-weight="700" fill="#ffffff">Recent searches</text>
+  <text x="336" y="285" text-anchor="end" font-size="13" fill="#c9c9d0">Clear all</text>
+  <rect x="24" y="300" width="118" height="34" rx="17" fill="#1b1b1f"/>
+  <text x="46" y="322" font-size="13" fill="#e5e5ea">🕘 Classical ✕</text>
+
+  <!-- start browsing -->
+  <text x="24" y="384" font-size="19" font-weight="700" fill="#ffffff">Start browsing</text>
+  <g>
+    <rect x="24" y="400" width="150" height="92" rx="12" fill="url(#lx-pink)"/><text x="40" y="428" font-size="17" font-weight="700" fill="#fff">Music</text>
+    <rect x="186" y="400" width="150" height="92" rx="12" fill="url(#lx-purple)"/><text x="202" y="428" font-size="17" font-weight="700" fill="#fff">Charts</text>
+    <rect x="24" y="504" width="150" height="92" rx="12" fill="url(#lx-green)"/><text x="40" y="532" font-size="17" font-weight="700" fill="#fff">Trending</text>
+    <rect x="186" y="504" width="150" height="92" rx="12" fill="url(#lx-blue)"/><text x="202" y="532" font-size="17" font-weight="700" fill="#fff">Romance</text>
+  </g>
+  <g fill="#ffffff" opacity="0.22">
+    <rect x="132" y="458" width="34" height="34" rx="7"/><rect x="294" y="458" width="34" height="34" rx="7"/>
+    <rect x="132" y="562" width="34" height="34" rx="7"/><rect x="294" y="562" width="34" height="34" rx="7"/>
+  </g>
+  <g fill="#ffffff" font-size="18" text-anchor="middle" opacity="0.9">
+    <text x="149" y="481">♪</text><text x="311" y="481">♪</text><text x="149" y="585">♪</text><text x="311" y="585">♪</text>
+  </g>
+
+  <!-- browse all -->
+  <text x="24" y="652" font-size="19" font-weight="700" fill="#ffffff">Browse all</text>
+  <rect x="24" y="668" width="150" height="92" rx="12" fill="url(#lx-lpurple)"/><text x="40" y="696" font-size="16" font-weight="700" fill="#fff">Made For You</text>
+  <rect x="186" y="668" width="150" height="92" rx="12" fill="url(#lx-olive)"/><text x="202" y="696" font-size="16" font-weight="700" fill="#fff">New Releases</text>
+
+  <!-- bottom nav -->
+  <rect x="24" y="726" width="312" height="46" rx="23" fill="#1a1a1e"/>
+  <g fill="#7a7a82"><text x="90" y="754" font-size="16" text-anchor="middle">⌂</text></g>
+  <circle cx="180" cy="749" r="17" fill="#F97316" opacity="0.25"/>
+  <circle cx="180" cy="749" r="7" fill="none" stroke="#F97316" stroke-width="2.5"/><line x1="185" y1="754" x2="189" y2="758" stroke="#F97316" stroke-width="2.5"/>
+</svg>

@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import { useLenis } from './SmoothScroll';
 import BrowserFrame from './BrowserFrame';
+import PhoneFrame from './PhoneFrame';
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
@@ -112,16 +113,30 @@ export default function ProjectModal({ project, onClose }) {
             {project.title}
           </h3>
 
-          {/* Hero image in browser chrome */}
-          <BrowserFrame url={project.liveUrl} className="mt-8">
-            <img
-              src={project.images[0] ?? project.thumbnail}
-              alt={`${project.title} screenshot`}
-              width="1200"
-              height="900"
-              className="w-full object-cover"
-            />
-          </BrowserFrame>
+          {/* Hero image: phone frame for mobile apps, browser chrome for web */}
+          {project.platform === 'mobile' ? (
+            <div className="mt-8 flex justify-center rounded-2xl border border-white/10 bg-[radial-gradient(120%_90%_at_50%_-10%,rgba(124,92,255,0.18),transparent_60%)] py-8">
+              <PhoneFrame className="w-[240px] max-w-[62vw]">
+                <img
+                  src={project.images[0] ?? project.thumbnail}
+                  alt={`${project.title} screenshot`}
+                  width="360"
+                  height="780"
+                  className="w-full object-cover"
+                />
+              </PhoneFrame>
+            </div>
+          ) : (
+            <BrowserFrame url={project.liveUrl} className="mt-8">
+              <img
+                src={project.images[0] ?? project.thumbnail}
+                alt={`${project.title} screenshot`}
+                width="1200"
+                height="900"
+                className="w-full object-cover"
+              />
+            </BrowserFrame>
+          )}
 
           {/* Meta grid */}
           <div className="mt-10 grid gap-10 md:grid-cols-3">
@@ -186,19 +201,36 @@ export default function ProjectModal({ project, onClose }) {
           {project.images.length > 1 && (
             <div className="mt-12">
               <h4 className="text-xs uppercase tracking-[0.28em] text-zinc-500">Gallery</h4>
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                {project.images.slice(1).map((src, i) => (
-                  <img
-                    key={src}
-                    src={src}
-                    alt={`${project.title} screenshot ${i + 2}`}
-                    loading="lazy"
-                    width="1200"
-                    height="900"
-                    className="w-full rounded-xl border border-white/10 object-cover"
-                  />
-                ))}
-              </div>
+              {project.platform === 'mobile' ? (
+                <div className="mt-4 flex flex-wrap justify-center gap-5 rounded-2xl border border-white/10 bg-white/[0.02] py-8">
+                  {project.images.slice(1).map((src, i) => (
+                    <PhoneFrame key={src} className="w-[190px] max-w-[42vw]">
+                      <img
+                        src={src}
+                        alt={`${project.title} screenshot ${i + 2}`}
+                        loading="lazy"
+                        width="360"
+                        height="780"
+                        className="w-full object-cover"
+                      />
+                    </PhoneFrame>
+                  ))}
+                </div>
+              ) : (
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {project.images.slice(1).map((src, i) => (
+                    <img
+                      key={src}
+                      src={src}
+                      alt={`${project.title} screenshot ${i + 2}`}
+                      loading="lazy"
+                      width="1200"
+                      height="900"
+                      className="w-full rounded-xl border border-white/10 object-cover"
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>

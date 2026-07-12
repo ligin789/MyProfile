@@ -17,9 +17,67 @@
  *   features:  array of key feature bullet points
  *   liveUrl:   live site URL ('' hides the button)
  *   githubUrl: repo URL ('' hides the button)
+ *   platform:  'mobile' renders a phone mockup instead of a browser window;
+ *              omit (or 'web') for websites.
  * }
  */
 const projects = [
+  {
+    id: 'pushmeup',
+    title: 'PushMeUp',
+    category: 'Mobile App · Fitness',
+    year: '2026',
+    platform: 'mobile',
+    thumbnail: '/projects/pushmeup-splash.svg',
+    images: ['/projects/pushmeup-splash.svg', '/projects/pushmeup-home.svg'],
+    shortDesc: 'A polished React Native workout tracker built for mid-set speed.',
+    fullDesc:
+      'PushMeUp is a full-featured fitness companion for logging workouts, routines, nutrition and progress — designed around one idea: never let the app slow down your training. The active-workout screen is tuned for two taps per set, with keyboard-free steppers, automatic PR detection, haptic set completion and a floating, draggable rest timer. Around it sits a complete training system: a routine builder, a searchable exercise library with form tips, interactive strength and volume charts, body-measurement tracking, a training calendar, nutrition and macro logging, and achievements earned from real data. Built entirely in React Native with spring-based Reanimated 4 motion, a custom SVG icon set, an OLED-friendly dark theme, and full accessibility support.',
+    role: 'Creator — product design, development & motion',
+    tech: ['React Native', 'Expo', 'TypeScript', 'Reanimated 4', 'React Navigation'],
+    features: [
+      'Active-workout screen tuned for two taps per set, with haptic feedback',
+      'Automatic PR detection with trophy markers on record sets',
+      'Floating, draggable circular rest timer with +30s and skip',
+      'Routine builder with reorder, duplicate, and undo',
+      'Searchable exercise library with form tips and per-exercise history',
+      'Interactive touch-to-inspect strength, volume, and weight charts',
+      'Body-measurement tracking with trend sparklines',
+      'Training calendar, weekly goal ring, and streak tracking',
+      'Nutrition: calorie ring, macros, and water logging',
+      'Dark / light / system themes, metric & imperial units, on-device data',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+  },
+  {
+    id: 'lalix',
+    title: 'LaliX',
+    category: 'Mobile App · Music',
+    year: '2026',
+    platform: 'mobile',
+    thumbnail: '/projects/lalix-search.svg',
+    images: ['/projects/lalix-search.svg', '/projects/lalix-settings.svg'],
+    shortDesc: 'A React Native music app with taste-based, daily-rotating discovery.',
+    fullDesc:
+      'LaliX is a full streaming music app with a personalization engine at its core. "Wave Brain" builds the home feed from your own taste — languages, favourite musicians, genres and time of day — and re-rolls it daily so it is never the same list twice, with Spotify-style Daily Mixes seeded from your likes and history. It streams full songs up to 320kbps with background and lock-screen playback, a full Now Playing screen with a wave seek bar and lyrics, and a Shazam-style Music Finder. Standout systems include Companion Mode (synced group listening over local Wi-Fi with no server), a Smart Sound Profile that remembers and restores volume per connected device, and an 8-colour accent catalogue. It runs entirely on-device — no backend, nothing leaves the phone.',
+    role: 'Creator — product design, development & motion',
+    tech: ['React Native', 'Expo', 'TypeScript', 'Track Player', 'Reanimated'],
+    features: [
+      'Streams full songs up to 320kbps with background & lock-screen playback',
+      'Wave Brain home feed built from your taste, re-rolled daily',
+      'Spotify-style Daily Mixes plus language, time-of-day, and artist mixes',
+      'Full Now Playing: wave seek bar, queue, shuffle, repeat, and lyrics',
+      'Search with live results, browse tiles, and Shazam-style Music Finder',
+      'Import playlists from Spotify, YouTube Music & JioSaavn links',
+      'Companion Mode: synced group listening over local Wi-Fi, no server',
+      'Smart Sound Profile: per-device volume, restored automatically',
+      '8-colour accent catalogue with a customisable Now Playing screen',
+      'Fully offline and backend-free — nothing leaves your phone',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+  },
   {
     id: 'jose-joseph-associates',
     title: 'Jose Joseph & Associates',

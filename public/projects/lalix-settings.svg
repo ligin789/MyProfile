@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="780" viewBox="0 0 360 780" font-family="'Barlow',Arial,sans-serif">
+  <rect width="360" height="780" fill="#0a0a0c"/>
+  <text x="24" y="40" font-size="15" font-weight="600" fill="#e5e5ea">9:22</text>
+
+  <text x="24" y="128" font-size="34" font-weight="700" fill="#ffffff">Settings</text>
+
+  <!-- Music Interests -->
+  <text x="46" y="182" font-size="15" font-weight="700" fill="#F97316">♥  Music Interests</text>
+  <rect x="24" y="196" width="312" height="66" rx="12" fill="#141416"/>
+  <text x="42" y="228" font-size="16" font-weight="600" fill="#ffffff">Languages, musicians &amp; genres</text>
+  <text x="42" y="248" font-size="12" fill="#8a8a92">English · Malayalam · Tamil · Vineeth Sreenivasan</text>
+  <text x="314" y="234" font-size="16" fill="#6b6b73">›</text>
+
+  <!-- Appearance -->
+  <text x="46" y="308" font-size="15" font-weight="700" fill="#F97316">◐  Appearance</text>
+  <rect x="24" y="322" width="82" height="38" rx="19" fill="#1b1b1f"/><text x="65" y="346" text-anchor="middle" font-size="14" fill="#d5d5da">System</text>
+  <rect x="116" y="322" width="72" height="38" rx="19" fill="#1b1b1f"/><text x="152" y="346" text-anchor="middle" font-size="14" fill="#d5d5da">Light</text>
+  <rect x="198" y="322" width="72" height="38" rx="19" fill="#F97316"/><text x="234" y="346" text-anchor="middle" font-size="14" font-weight="600" fill="#111114">Dark</text>
+
+  <!-- Accent Colour -->
+  <text x="46" y="418" font-size="15" font-weight="700" fill="#F97316">✎  Accent Colour</text>
+  <g>
+    <circle cx="46" cy="452" r="18" fill="#22C55E"/>
+    <circle cx="90" cy="452" r="18" fill="#3B82F6"/>
+    <circle cx="134" cy="452" r="18" fill="#8B5CF6"/>
+    <circle cx="178" cy="452" r="18" fill="#EC4899"/>
+    <circle cx="222" cy="452" r="18" fill="#EF4444"/>
+    <circle cx="266" cy="452" r="18" fill="#F97316"/>
+    <circle cx="266" cy="452" r="24" fill="none" stroke="#F97316" stroke-width="2.5"/>
+    <path d="M259 452l5 5 9-10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="310" cy="452" r="18" fill="#EAB308"/>
+    <circle cx="46" cy="500" r="18" fill="#14B8A6"/>
+  </g>
+  <text x="24" y="548" font-size="12" fill="#8a8a92">Orange — used for buttons, highlights and the player.</text>
+
+  <!-- Audio Quality -->
+  <text x="46" y="596" font-size="15" font-weight="700" fill="#F97316">♪  Audio Quality</text>
+  <rect x="24" y="610" width="312" height="150" rx="12" fill="#141416"/>
+  <text x="42" y="642" font-size="16" font-weight="600" fill="#ffffff">Auto (Highest)</text>
+  <text x="42" y="662" font-size="12" fill="#8a8a92">Best available, up to 320kbps</text>
+  <circle cx="312" cy="646" r="9" fill="none" stroke="#F97316" stroke-width="2.5"/><circle cx="312" cy="646" r="4" fill="#F97316"/>
+  <line x1="42" y1="686" x2="318" y2="686" stroke="#ffffff" stroke-opacity="0.06"/>
+  <text x="42" y="712" font-size="16" font-weight="600" fill="#ffffff">High</text>
+  <text x="42" y="730" font-size="12" fill="#8a8a92">320kbps</text>
+  <circle cx="312" cy="714" r="9" fill="none" stroke="#4a4a50" stroke-width="2.5"/>
+</svg>
