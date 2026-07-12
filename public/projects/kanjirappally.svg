@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g1" cx="80%" cy="15%" r="90%">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#1c1530"/>
+      <stop offset="100%" stop-color="#0f0f13"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g1)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 225h1200M0 450h1200M0 675h1200M300 0v900M600 0v900M900 0v900"/>
+  </g>
+  <circle cx="950" cy="180" r="220" fill="#7c5cff" fill-opacity="0.12"/>
+  <text x="80" y="480" font-family="Helvetica, Arial, sans-serif" font-size="200" font-weight="700" fill="#ffffff" fill-opacity="0.9">KI</text>
+  <text x="80" y="560" font-family="Helvetica, Arial, sans-serif" font-size="34" letter-spacing="10" fill="#a78bfa">KANJIRAPPALLY INFO CENTER</text>
+  <text x="80" y="610" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8b8b96">Local information portal — replace with a real screenshot</text>
+</svg>

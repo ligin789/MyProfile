@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g3" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#1b1533"/>
+      <stop offset="100%" stop-color="#0f0f13"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g3)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 225h1200M0 450h1200M0 675h1200M300 0v900M600 0v900M900 0v900"/>
+  </g>
+  <circle cx="600" cy="120" r="240" fill="#38bdf8" fill-opacity="0.08"/>
+  <text x="80" y="480" font-family="Helvetica, Arial, sans-serif" font-size="200" font-weight="700" fill="#ffffff" fill-opacity="0.9">PX</text>
+  <text x="80" y="560" font-family="Helvetica, Arial, sans-serif" font-size="34" letter-spacing="10" fill="#a78bfa">PRINTX</text>
+  <text x="80" y="610" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8b8b96">Custom eCommerce with Razorpay — replace with a real screenshot</text>
+</svg>

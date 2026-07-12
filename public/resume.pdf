@@ -1,0 +1,60 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 2206 >>
+stream
+BT /F2 24 Tf 54 740 Td (LIGIN ABRAHAM) Tj ET
+BT /F1 12 Tf 54 718 Td (Senior Frontend Developer) Tj ET
+BT /F1 9 Tf 54 700 Td (Kochi, Kerala, India  |  ligin789@gmail.com  |  +91-6282522293  |  github.com/ligin789) Tj ET
+BT /F2 12 Tf 54 666 Td (SUMMARY) Tj ET
+BT /F1 10 Tf 54 648 Td (Results-driven frontend developer with 4+ years of experience building scalable web and mobile) Tj ET
+BT /F1 10 Tf 54 634 Td (applications. Delivered high-performance UIs for enterprise clients including international airlines.) Tj ET
+BT /F1 10 Tf 54 620 Td (Passionate about clean architecture, motion, and experimental side projects.) Tj ET
+BT /F2 12 Tf 54 586 Td (EXPERIENCE) Tj ET
+BT /F2 10 Tf 54 566 Td (Tata Consultancy Services - System Engineer | Kochi, India | Aug 2022 - Present) Tj ET
+BT /F1 10 Tf 54 551 Td (- Built reusable UI components for international airline clients, cutting dev time ~30%.) Tj ET
+BT /F1 10 Tf 54 537 Td (- Integrated deeply nested JSON APIs with async data handling.) Tj ET
+BT /F1 10 Tf 54 523 Td (- Delivered 3+ high-impact POCs influencing client roadmaps.) Tj ET
+BT /F1 10 Tf 54 509 Td (- 'Best Performer' award for a Flight Status component shipped 2 weeks early.) Tj ET
+BT /F2 10 Tf 54 487 Td (MedClick Pvt Ltd - React Developer | Remote | May 2021 - Jul 2021) Tj ET
+BT /F1 10 Tf 54 472 Td (- Reduced page load time by 35% via performance optimizations.) Tj ET
+BT /F1 10 Tf 54 458 Td (- Migrated legacy components to React functional components with Hooks.) Tj ET
+BT /F2 12 Tf 54 424 Td (SKILLS) Tj ET
+BT /F1 10 Tf 54 406 Td (Frontend: React, React Native, JavaScript, TypeScript, Redux) Tj ET
+BT /F1 10 Tf 54 392 Td (Backend/APIs: Node.js, Express.js, Core PHP, REST APIs) Tj ET
+BT /F1 10 Tf 54 378 Td (Tools: Git, Jenkins, Postman, SonarQube, AWS CodeBuild, Jira) Tj ET
+BT /F1 10 Tf 54 364 Td (Databases: MongoDB, MySQL  |  Testing: Jest  |  Also: Python, C++, C#) Tj ET
+BT /F2 12 Tf 54 330 Td (EDUCATION) Tj ET
+BT /F1 10 Tf 54 312 Td (Integrated MCA - Amal Jyothi College, APJ Abdul Kalam Technological University \(2017-2022\)) Tj ET
+BT /F1 10 Tf 54 298 Td (CGPA 8.23) Tj ET
+BT /F1 8 Tf 54 258 Td (\(Placeholder PDF - replace public/resume.pdf with your designed resume.\)) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2654
+%%EOF
