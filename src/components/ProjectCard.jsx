@@ -60,7 +60,7 @@ export default function ProjectCard({ project, index, onOpen }) {
           />
         </BrowserFrame>
 
-        {/* Name + short description, bottom-left */}
+        {/* Name + short description + tech stack, bottom-left */}
         <div className="absolute inset-x-6 bottom-6 flex items-end justify-between gap-4">
           <div className="min-w-0">
             <h3 className="font-display text-2xl font-medium text-white transition-colors duration-300 group-hover:text-accent-soft md:text-3xl">
@@ -69,6 +69,21 @@ export default function ProjectCard({ project, index, onOpen }) {
             <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-400">
               {project.shortDesc}
             </p>
+            {project.tech?.length > 0 && (
+              <ul className="mt-4 flex flex-wrap items-center gap-2" aria-label="Tech stack">
+                {project.tech.slice(0, 4).map((tech) => (
+                  <li
+                    key={tech}
+                    className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-[11px] text-zinc-300 transition-colors duration-300 group-hover:border-accent/30"
+                  >
+                    {tech}
+                  </li>
+                ))}
+                {project.tech.length > 4 && (
+                  <li className="text-[11px] text-zinc-500">+{project.tech.length - 4}</li>
+                )}
+              </ul>
+            )}
           </div>
           <span
             className="mb-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 text-white transition-all duration-500 group-hover:border-accent group-hover:bg-accent"

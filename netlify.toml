@@ -1,0 +1,17 @@
+# Netlify build config. Without this, Netlify may publish the repo root
+# (raw source) and serve the dev index.html that points at /src/main.jsx —
+# which fails with a MIME "application/octet-stream" module error and a white
+# screen. These settings run the Vite build and publish the compiled output.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page app: serve index.html for any unknown path. Netlify serves real
+# files in /dist first, so hashed assets keep their correct MIME types.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

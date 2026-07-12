@@ -15,14 +15,28 @@ export default function Skills() {
       if (!ready) return;
       const mm = gsap.matchMedia();
       mm.add('(prefers-reduced-motion: no-preference)', () => {
-        gsap.from(gridRef.current.children, {
-          y: 56,
-          opacity: 0,
-          duration: 0.9,
-          stagger: 0.08,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: gridRef.current, start: 'top 82%', once: true },
-        });
+        // fromTo + immediateRender:false: the hidden start state is applied
+        // only when the tween actually plays, so if the trigger ever fails to
+        // fire (e.g. after a pin refresh) the cards stay visible, never stuck
+        // blank. This section sits below the pinned gallery, which is exactly
+        // where a plain .from() reveal gets reset and left invisible.
+        gsap.fromTo(
+          gridRef.current.children,
+          { y: 56, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.9,
+            stagger: 0.08,
+            ease: 'power3.out',
+            immediateRender: false,
+            scrollTrigger: {
+              trigger: gridRef.current,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
       });
     },
     { scope: sectionRef, dependencies: [ready], revertOnUpdate: true }

@@ -17,22 +17,43 @@ export default function Contact() {
       if (!ready) return;
       const mm = gsap.matchMedia();
       mm.add('(prefers-reduced-motion: no-preference)', () => {
+        // fromTo + immediateRender:false so these reveals can never leave the
+        // headline or CTAs stuck hidden if the trigger fails to fire after the
+        // pinned gallery above (see Skills.jsx for the same guard).
         const split = new SplitText(headlineRef.current, { type: 'lines,words', mask: 'lines' });
-        gsap.from(split.words, {
-          yPercent: 120,
-          duration: 1.1,
-          stagger: 0.04,
-          ease: 'power4.out',
-          scrollTrigger: { trigger: headlineRef.current, start: 'top 80%', once: true },
-        });
-        gsap.from(bodyRef.current.children, {
-          y: 32,
-          opacity: 0,
-          duration: 0.9,
-          stagger: 0.09,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: bodyRef.current, start: 'top 88%', once: true },
-        });
+        gsap.fromTo(
+          split.words,
+          { yPercent: 120 },
+          {
+            yPercent: 0,
+            duration: 1.1,
+            stagger: 0.04,
+            ease: 'power4.out',
+            immediateRender: false,
+            scrollTrigger: {
+              trigger: headlineRef.current,
+              start: 'top 80%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+        gsap.fromTo(
+          bodyRef.current.children,
+          { y: 32, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.9,
+            stagger: 0.09,
+            ease: 'power3.out',
+            immediateRender: false,
+            scrollTrigger: {
+              trigger: bodyRef.current,
+              start: 'top 88%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
         return () => split.revert();
       });
     },
