@@ -1,0 +1,6 @@
+# Allow all search engines to crawl the site.
+User-agent: *
+Allow: /
+
+# Update the sitemap URL to your real domain if it changes.
+Sitemap: https://liginabraham.netlify.app/sitemap.xml

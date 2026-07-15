@@ -4,11 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0b" />
+
+    <!--
+      ⚠️  ONE THING TO UPDATE: change the two absolute URLs below (canonical
+      link + og:url + og:image + sitemap in robots.txt) to your real Netlify
+      or custom domain. Everything else (JSON-LD, keywords, twitter card)
+      picks it up from here. Search "https://liginabraham.netlify.app" and
+      replace across index.html, public/robots.txt, and public/sitemap.xml.
+    -->
+
+    <!-- Primary meta ------------------------------------------------------- -->
+    <title>Ligin Abraham — Senior Frontend Developer | React, React Native & 3D Web</title>
     <meta
       name="description"
-      content="Ligin Abraham — Senior Frontend Developer. Building high-performance web & mobile experiences with React, React Native & 3D web."
+      content="Ligin Abraham is a Senior Frontend Developer in Kochi, India, with 4+ years building high-performance React, React Native and 3D web experiences for enterprise clients including international airlines."
     />
-    <title>Ligin Abraham — Senior Frontend Developer</title>
+    <meta
+      name="keywords"
+      content="Ligin Abraham, Ligin Abraham developer, Ligin Abraham portfolio, frontend developer Kochi, React developer India, React Native developer Kerala, senior frontend developer, JavaScript developer, TypeScript, GSAP, Three.js, TCS developer"
+    />
+    <meta name="author" content="Ligin Abraham" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://liginabraham.netlify.app/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack) -------------------- -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ligin Abraham" />
+    <meta property="og:title" content="Ligin Abraham — Senior Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Building high-performance web & mobile experiences with React, React Native and 3D web. 4+ years at TCS shipping UIs for international airline clients."
+    />
+    <meta property="og:url" content="https://liginabraham.netlify.app/" />
+    <meta property="og:image" content="https://liginabraham.netlify.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ligin Abraham — Senior Frontend Developer portfolio" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter card -------------------------------------------------------- -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ligin Abraham — Senior Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Building high-performance web & mobile experiences with React, React Native and 3D web."
+    />
+    <meta name="twitter:image" content="https://liginabraham.netlify.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Ligin Abraham portfolio share card" />
+
+    <!-- Structured data ----------------------------------------------------- -->
+    <!-- Person schema: what Google reads to build a Knowledge Graph card for
+         a name search like "Ligin Abraham". sameAs links tell Google which
+         profiles across the web belong to this same person. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ligin Abraham",
+        "givenName": "Ligin",
+        "familyName": "Abraham",
+        "jobTitle": "Senior Frontend Developer",
+        "description": "Frontend developer with 4+ years building scalable React and React Native applications for enterprise clients including international airlines.",
+        "url": "https://liginabraham.netlify.app/",
+        "image": "https://liginabraham.netlify.app/og-image.png",
+        "email": "mailto:ligin789@gmail.com",
+        "telephone": "+91-6282522293",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kochi",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Tata Consultancy Services",
+          "url": "https://www.tcs.com/"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Amal Jyothi College of Engineering",
+          "sameAs": "https://amaljyothi.ac.in/"
+        },
+        "knowsAbout": [
+          "React",
+          "React Native",
+          "TypeScript",
+          "JavaScript",
+          "Redux",
+          "Node.js",
+          "GSAP",
+          "Three.js",
+          "REST APIs",
+          "Frontend performance",
+          "UI engineering"
+        ],
+        "sameAs": [
+          "https://github.com/ligin789",
+          "https://www.linkedin.com/in/ligin-abraham"
+        ]
+      }
+    </script>
+
+    <!-- WebSite schema — enables the Google sitelinks search box + confirms
+         the site's official name for Ligin Abraham. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Ligin Abraham — Portfolio",
+        "url": "https://liginabraham.netlify.app/",
+        "author": { "@type": "Person", "name": "Ligin Abraham" },
+        "inLanguage": "en"
+      }
+    </script>
+
+    <!-- Icon + fonts ------------------------------------------------------- -->
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0b'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' fill='%237c5cff' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E"
@@ -27,6 +138,31 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Server-rendered fallback content: gives search engines and any
+         non-JS crawler real, indexable copy about Ligin (name, role, bio,
+         contact) even before the React app hydrates. Hidden from users. -->
+    <noscript>
+      <div>
+        <h1>Ligin Abraham — Senior Frontend Developer</h1>
+        <p>
+          Ligin Abraham is a Senior Frontend Developer based in Kochi, Kerala,
+          India, with 4+ years of experience building high-performance React,
+          React Native and 3D web applications for enterprise clients
+          including international airlines at Tata Consultancy Services.
+        </p>
+        <p>
+          Skilled in React, React Native, TypeScript, JavaScript, Redux,
+          Node.js, GSAP, Three.js and REST APIs.
+        </p>
+        <p>
+          Contact:
+          <a href="mailto:ligin789@gmail.com">ligin789@gmail.com</a> ·
+          <a href="https://github.com/ligin789">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/ligin-abraham">LinkedIn</a>
+        </p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

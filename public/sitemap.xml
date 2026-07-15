@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Single-page site: one URL. If you add real routed pages later, list them
+  here too. Also update the loc + robots.txt Sitemap: line if you change
+  domain (e.g. liginabraham.com).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://liginabraham.netlify.app/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
