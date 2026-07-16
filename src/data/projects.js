@@ -147,7 +147,7 @@ const projects = [
       'PDF and Excel exports for reports and financial data',
       'Per-estate and portfolio-wide analytics dashboards',
     ],
-    liveUrl: '',
+    liveUrl: 'https://dkestate.freedev.app/',
     githubUrl: 'https://github.com/ligin789',
   },
   {
